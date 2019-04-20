@@ -1,0 +1,33 @@
+
+.products .content{
+    width: 80%;
+    margin: 18px auto;
+}
+.products section{
+    margin-top: 14px;
+}
+.products section p{
+    line-height: 32px;
+    font-size: 20px;
+    text-indent: 38px;
+}
+@media screen and (min-width: 992px){
+    .products nav img{
+        width: 100%;
+        height: 378px;
+    }
+    .products section img{
+        width: 248px;
+        height: 378px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .products nav img{
+        width: 100%;
+        height: 178px;
+    }
+    .products section img{
+        width: 100%;
+        height: 428px;
+    }
+}

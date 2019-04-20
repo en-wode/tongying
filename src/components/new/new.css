@@ -1,0 +1,30 @@
+.new img{
+    width: 100%;
+    height: 100%;
+}
+.new section .ant-row{
+    padding: 24px 0;
+    cursor: pointer;
+}
+.new section .ant-row img {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+@media screen and (min-width: 992px) {
+    .new section{
+        width: 60%;
+        margin: 0 auto;
+        padding: 46px 0;
+        min-width: 900px;
+    }
+    .new section .ant-row img {
+        width: 220px;
+        height: 160px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .new section .content{
+        display: none;
+    }
+}

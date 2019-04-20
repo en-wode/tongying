@@ -1,0 +1,66 @@
+#head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background: black;
+    opacity: 0.6;
+}
+#logo{
+    float: left;
+    padding-left: 66px;
+    overflow: hidden;
+    line-height: 52px;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: 32px;
+    color: #ccc;
+}
+.ant-menu-horizontal > .ant-menu-item > a{
+    color: #ccc!important;
+}
+.ant-menu{
+    background: none!important;
+    color: #ccc!important;
+}
+#nav{
+    float: right;
+    margin-right: 15%;
+    font-size: 22px;
+}
+
+.ant-affix{
+    background: white;
+}
+#head .ant-menu-horizontal{
+    float: right;
+    border-bottom: none;
+}
+.ant-menu-item, .ant-menu-submenu-title{
+    padding: 0 30px;
+}
+#head header .icon-nav{
+    color: white;
+    float: right;
+    font-size: 24px;
+    padding: 10px 10px 0 0;
+}
+#head header h1{
+    color: white;
+    float: left;
+    padding: 10px;
+    line-height: 26px;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+    #head .pchead{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    #head header{
+        display: none;
+    }
+}

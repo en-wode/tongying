@@ -1,0 +1,8 @@
+@import '~antd/dist/antd.css';
+ul,li{list-style-type: none}
+a{text-decoration:none;color:#333; }
+
+/*导航*/
+#nav .ant-menu-horizontal{
+    border-bottom: none;
+}

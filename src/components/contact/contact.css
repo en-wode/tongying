@@ -1,0 +1,18 @@
+.contact img{
+    width: 100%;
+    height: 100%;
+}
+.contact section .ant-row{
+    padding: 24px 0;
+}
+.contact section .ant-row img {
+    width: 80%;
+    height: 80%
+}
+@media screen and (min-width: 992px) {
+    .contact section{
+        width: 80%;
+        margin: 0 auto;
+        padding: 46px 0;
+    }
+}

@@ -1,0 +1,21 @@
+.about img{
+    width: 100%;
+    height: 100%;
+}
+.about section .ant-row{
+    padding: 24px 0;
+}
+.about section .ant-row img {
+    width: 80%;
+    height: 80%
+}
+@media screen and (min-width: 992px) {
+    .about section{
+        width: 80%;
+        margin: 0 auto;
+        padding: 46px 0;
+    }
+}
+@media screen and (max-width: 768px) {
+
+}
