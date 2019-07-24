@@ -5,8 +5,6 @@ import React from 'react';
 import { Row, Col, Card, Carousel, Divider } from 'antd';
 import ty_foot from '../foot/foot';
 import { BrowserRouter as Router, Route} from "react-router-dom";
-// import {request} from '../../utils/fetch';
-// import {getNewList} from '../../utils/axios';
 import axios from 'axios';
 
 const { Meta } = Card;
@@ -39,12 +37,7 @@ class Home extends React.Component{
             document.addEventListener('DOMMouseScroll',this.scroll.bind(this), { passive: false });
         }
         window.onmousewheel=document.onmousewheel=this.scroll.bind(this);
-      axios.get("http://localhost:80/api/article/getFundArticles",{
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-           'Content-Type':'application/json',
-        }
-      })
+      axios.get("api/article/getFundArticles")
         .then(function (response) {
           console.log(response)
         })
