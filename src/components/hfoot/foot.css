@@ -1,0 +1,22 @@
+.foota{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #131a24;
+    color: white;
+    bottom: 0;
+}
+.foot1{
+    margin: 0 auto;
+    height: 38px;
+}
+.foot2{
+    text-align: center;
+    font-size: 14px;
+    padding: 14px 0;
+    line-height: 2.2;
+    border-top: 1px solid #2e333b;
+}
+.foot2 p{
+    text-align: center;
+}

@@ -46,11 +46,17 @@ class ty_head extends React.Component{
                             </Menu.Item>
                             <SubMenu title="产品介绍">
                                 <MenuItemGroup>
+                                    <Menu.Item key="Products/0">
+                                        <Link to="/Products/0">智能截污井</Link>
+                                    </Menu.Item>
                                     <Menu.Item key="Products/1">
-                                        <Link to="/Products/1">截污井</Link>
+                                        <Link to="/Products/1">智能截污井控制系统</Link>
                                     </Menu.Item>
                                     <Menu.Item key="Products/2">
-                                        <Link to="/Products/2">截污井2</Link>
+                                        <Link to="/Products/2">景观瀑布翻板闸门</Link>
+                                    </Menu.Item>
+                                    <Menu.Item key="Products/3">
+                                        <Link to="/Products/3">生态蓄水钢坝</Link>
                                     </Menu.Item>
                                 </MenuItemGroup>
                             </SubMenu>

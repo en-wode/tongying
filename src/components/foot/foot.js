@@ -2,6 +2,7 @@
  *作者:wanan
  */
 import React from 'react';
+
 require(`./foot.css`);
 
 class ty_foot extends React.Component{

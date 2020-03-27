@@ -3,9 +3,10 @@
  */
 import React from 'react';
 import { Row, Col, Card, Carousel, Divider } from 'antd';
-import ty_foot from '../foot/foot';
+import ty_foot from '../hfoot/foot';
 import { BrowserRouter as Router, Route} from "react-router-dom";
 import axios from 'axios';
+import { Link } from 'react-router-dom'
 
 const { Meta } = Card;
 require(`./home.css`);
@@ -104,8 +105,8 @@ class Home extends React.Component{
                 <div className="container" style={{'transform': 'translate3d(0px,-'+ this.state.fullPage*this.state.offsetheight +'px, 0px)'}}>
                     <section key={1} style={{'height':this.state.offsetheight+'px'}}>
                         <Carousel effct="fade" autoplay>
-                            <img src={require("../../assets/img/home/hengtu.jpg")}  alt=""/>
-                            <img src={require("../../assets/img/home/hengtu.jpg")}  alt=""/>
+                            <img src={require("../../assets/img/home/home2.png")}  alt=""/>
+                            <img src={require("../../assets/img/home/home1.png")}  alt=""/>
                         </Carousel>
                     </section>
                     <section key={2} style={{'height':this.state.offsetheight+'px'}}>
@@ -125,60 +126,69 @@ class Home extends React.Component{
                                     <li>
                                         <Row>
                                             <Col lg={18}>
-                                                <a href="/">
+                                                <Link to="/Newdetail/0">
+
                                                     江苏省城市黑臭水体治理攻坚战实施方案
-                                                </a>
+                                                </Link>
                                             </Col>
                                             <Col lg={6} xs={{ span: 0}} className="time">
-                                                2018-12-14
+                                                2019-04-18
                                             </Col>
                                         </Row>
                                     </li>
                                     <li>
                                         <Row>
                                             <Col lg={18}>
-                                                <a href="/">
+.                                                <Link to="/Newdetail/1">
+
                                                     省政府办公厅江苏省环境基础设施三年建设方案
-                                                </a>
+                                                </Link>
+
                                             </Col>
                                             <Col lg={6} xs={{ span: 0}} className="time">
-                                                2019-03-07
+                                                2019-04-18
                                             </Col>
                                         </Row>
                                     </li>
                                     <li>
                                         <Row>
                                             <Col lg={18}>
-                                                <a href="/">
-                                                    陈寅副市长调研市生态环境局
-                                                </a>
+                                                <Link to="/Newdetail/2">
+
+                                                    一体化智能截污井
+                                                </Link>
+
                                             </Col>
                                             <Col lg={6} xs={{ span: 0}} className="time">
-                                                2019-02-19
+                                                2018-08-18
                                             </Col>
                                         </Row>
                                     </li>
                                     <li>
                                         <Row>
                                             <Col lg={18}>
-                                                <a href="/">
-                                                    陈寅副市长调研市生态环境局
-                                                </a>
+                                                <Link to="/Newdetail/3">
+
+                                                    省政府办公厅关于印发江苏省太湖蓝藻暴发应急预案的通知
+                                                </Link>
+
                                             </Col>
                                             <Col lg={6} xs={{ span: 0}} className="time">
-                                                2019-02-19
+                                                2020-03-13
                                             </Col>
                                         </Row>
                                     </li>
                                     <li>
                                         <Row>
                                             <Col lg={18}>
-                                                <a href="/">
-                                                    陈寅副市长调研市生态环境局
-                                                </a>
+                                                <Link to="/Newdetail/4">
+
+                                                    省政府办公厅关于加强洪泽湖生态保护和科学利用的实施意见
+                                                </Link>
+
                                             </Col>
                                             <Col lg={6} xs={{ span: 0}} className="time">
-                                                2019-02-19
+                                                2019-08-31
                                             </Col>
                                         </Row>
                                     </li>
@@ -199,38 +209,50 @@ class Home extends React.Component{
                             </div>
                             <div className="contant">
                                 <Row  gutter={28} >
+                                    <Link to="/Products/0">
+                                        <Col lg={6} xs={{ span: 12}} className="time">
+                                            <Card hoverable
+                                                  cover={<img alt="example" src={require('../../assets/img/product/jiewujing.png')} />}>
+                                                <Meta
+                                                    title="一体化智能截污井"
+                                                />
+                                            </Card>
+                                        </Col>
+                                    </Link>
+                                    <Link to="/Products/0">
+
                                     <Col lg={6} xs={{ span: 12}} className="time">
                                         <Card hoverable
-                                              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}>
+                                              cover={<img alt="example" src={require('../../assets/img/product/optionselect.jpg')} />}>
                                             <Meta
-                                                title="Europe Street beat"
+                                                title="微信小程序"
                                             />
                                         </Card>
                                     </Col>
-                                    <Col lg={6} xs={{ span: 12}} className="time">
+                                    </Link>
+
+                                    <Link to="/Products/0">
+
+                                        <Col lg={6} xs={{ span: 12}} className="time">
                                         <Card hoverable
-                                              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}>
+                                              cover={<img alt="example" src={require('../../assets/img/product/iw-q.jpg')} />}>
                                             <Meta
-                                                title="Europe Street beat"
+                                                title="景观瀑布翻板闸门"
                                             />
                                         </Card>
                                     </Col>
-                                    <Col lg={6} xs={{ span: 12}} className="time">
+                                    </Link>
+
+                                    <Link to="/Products/0">
+                                            <Col lg={6} xs={{ span: 12}} className="time">
                                         <Card hoverable
-                                              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}>
+                                              cover={<img alt="example" src={require('../../assets/img/product/shengtaixushui.png')} />}>
                                             <Meta
-                                                title="Europe Street beat"
+                                                title="生态蓄水钢坝"
                                             />
                                         </Card>
                                     </Col>
-                                    <Col lg={6} xs={{ span: 12}} className="time">
-                                        <Card hoverable
-                                              cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}>
-                                            <Meta
-                                                title="Europe Street beat"
-                                            />
-                                        </Card>
-                                    </Col>
+                                    </Link>
                                 </Row>
                                 <div></div>
                             </div>
@@ -254,9 +276,9 @@ class Home extends React.Component{
                                     </Col>
                                     <Col lg={12} xs={{ span: 24}} className="lianxi">
                                         <Divider orientation="right">联系方式</Divider>
-                                        <p>联系人：刘雪岭</p>
-                                        <p>联系电话：0514- 847 286 68</p>
-                                        <p>传真：0514- 847 287 78</p>
+                                        <p>联系人：沙先生</p>
+                                        <p>联系电话：13482602940</p>
+                                        <p>传真：69613032</p>
                                     </Col>
                                 </Row>
 

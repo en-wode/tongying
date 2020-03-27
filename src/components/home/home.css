@@ -26,7 +26,7 @@ section .list{
 }
 .section img{
     width: 100%;
-    height: 100%;
+    height: 426px;
 }
 .container{
     width: 100%;
@@ -116,6 +116,10 @@ section .solution .contant .lianxi p{
 }
 #lianxi{
     position: relative;
+}
+.contant image{
+    width: 100%;
+    height: 600px;
 }
 /*媒体查询*/
 @media screen and (min-width: 992px) {
